@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8" />
+  <script>
+	function shopping(){
+		//1、定义 输入 和 输出 的变量
+		var price,count,money;
+		var total,change;
+		//2、为输入(单价、数量)的变量赋值
+		price=parseInt(window.prompt("请输入商品价格"));
+		count=parseInt(window.prompt("请输入购买的数量"));
+		//3、计算商品总价格(显示)
+		total=price*count;
+		window.alert("总价:"+total);
+
+		//判断金额是否 【大于】 500 ，如果大于500的话，则【打8折】
+		if(total >= 500){
+			total=total*0.8;
+			window.alert("折后价:"+total);
+		}
+
+		//4、为 收款金额 赋值
+		money=parseInt(window.prompt("请付账:"));
+		//判断 money 和 total之间的关系
+		if(money >= total){
+			//5、计算 找零(显示)
+			change=money-total;
+			//判断 找零 是否为 0，不为0 则提示找零
+			if(change != 0){
+				window.alert("找零:"+change);
+			}
+		}else{
+			//金额不足
+			window.alert("不好意思，钱不够....");
+		}
+	}
+
+	shopping();
+  </script>
+ </head>
+
+ <body>
+ </body>
+</html>

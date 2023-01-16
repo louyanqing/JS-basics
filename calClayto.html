@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8" />
+  <script>
+	function calClayto(){
+		var weight = parseFloat(prompt("请输入体重(kg):"));
+		var height = parseFloat(prompt("请输入身高(m):"));
+		//cal Clayto index
+		var clayto = weight / (height * height);
+		if(clayto < 20){
+			document.write("偏瘦");
+		}else if(clayto > 25){
+			document.write("偏胖");
+		}else{
+			document.write("完美");
+		}
+	}
+
+	calClayto();
+  </script>
+ </head>
+
+ <body>
+ </body>
+</html>
