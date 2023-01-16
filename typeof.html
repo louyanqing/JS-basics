@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8" />
+  <script>
+	var name = "张无忌";
+	var age = 28;
+	var isYemen = false;
+	var wife;
+
+	//计算 name 和 age的相加结果
+	var result = age + name;
+	console.log("结果:"+result+",类型为:"+typeof(result));
+	//计算 name  和 isYemen
+	var result1 = name + isYemen;
+	console.log("结果:"+result1+",类型为:"+typeof(result1));
+	//计算 name(string)  和  wife (undefined)
+	var result2 = name + wife;
+	console.log("结果:"+result2+",类型为:"+typeof(result2));
+	//计算 age(number) 和 isYemen(boolean)
+	var result3 = age + isYemen;
+	console.log("结果:"+result3+",类型为:"+typeof(result3));
+	//计算 age(number) 和 wife(undefined)
+	var result4 = age + wife;
+	console.log("结果:"+result4+",类型为:"+typeof(result4));
+	//计算 isYemen(boolean) 和 wife(undefined)
+	var result5 = isYemen + wife;
+	console.log("结果:"+result5+",类型为:"+typeof(result5));
+
+	//保存用户输入的数据
+	//var input = window.prompt("请输入工资:",0);
+
+
+
+
+
+	//查看变量的数据类型是什么
+	/*console.log("name:" + typeof(name));
+	console.log("age:" + typeof(age));
+	console.log("isYemen:" + typeof(isYemen));
+	console.log("wife:" + typeof(wife));*/
+  </script>
+ </head>
+
+ <body>
+ </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8" />
+  <script>
+	function score(){
+		//1、输入成绩 并且 类型转换
+		var score = parseInt(prompt("请输入分数:"));
+		//2、根据分值判断 给哪些奖励
+		//多重 if ... else 结构 
+		if(score == 100){
+			console.log("兰博基尼");
+		}else if(score >= 90){
+			console.log("保时捷");
+		}else if(score >= 80){
+			console.log("奔驰");
+		}else{
+			console.log("大嘴巴");
+		}
+
+
+  	/*if(score == 100){
+			console.log("奖励一台 兰博基尼");
+		}else{
+			if(score >= 90){
+				console.log("奖励一台 保时捷");
+			}else{
+				if(score >= 80){
+					console.log("奖励一台 奔驰");
+				}
+				if(score >= 70){
+					console.log("奖励一台 奥迪");
+				}
+				if(score >= 60){
+					console.log("奖励一台 奥拓");
+				}else{
+					console.log("奖励一 大嘴巴！");
+				}
+			}	
+		}*/
+
+
+
+
+		
+
+
+	}
+
+	score();
+  </script>
+ </head>
+
+ <body>
+ </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> 带参函数 </title>
+  <meta charset="utf-8" />
+  <script>
+	//1、声明一个 函数 ，叫榨汁机，
+	//2、主体功能，根据传递过来的水果名称，反馈榨的什么汁
+	function zhaZhiJi(fruit){
+		window.alert(fruit+"汁");
+	}
+
+
+	//调用 zhaZhiJi 函数，并且传递参数
+	/*var shuiGuo = "香蕉";
+	zhaZhiJi(shuiGuo);*/
+
+	//定义一个函数 
+	  function show(){
+		console.log("昨天晚上，在教室里，小明和老王正在...");
+	  }
+	  show();
+	  //时间、地点、人物、事件
+	  function showInfo(time,place,people,thing){
+		console.log(time+",在"+place+","+people+"正在"+thing);
+	  }
+	  showInfo("今天上午","操场","李雷和韩梅梅","玩扑克");
+  </script>
+ </head>
+
+ <body>
+   <input type="button" value="带参函数" onclick="showInfo('昨天晚上','我房间里','我和你','下棋')" />
+ </body>
+</html>
