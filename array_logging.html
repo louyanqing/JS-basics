@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> 数组 </title>
+		<meta charset="utf-8"/>
+		<script>
+			/*function system(){
+				var input=[];
+				var i=0;
+				while(true){
+
+					input[i]=prompt("请输入姓名：");		
+					if(input[i] == "exit"){
+						break;
+					}
+					console.log("员工姓名："+input[i]);
+					i++;
+				}
+			}*/
+			function saveName(){
+				var names = new Array();
+				while(true){
+					var name = prompt("请输入姓名：");
+					if(name == "exit"){
+						break;
+					}
+					var index = names.length;
+					names[index] = name;
+				}
+				if(names.length == 0){
+					console.log("数组中还没有任何数据！");
+				}else{
+					/*console.log("录入的员工姓名为："+names);//一次性打印数组*/
+					/*for(var i=0;i<names.length;i++){
+						console.log((i+1)+"、"+names[i]);
+					}//正序打印*/
+					for(var i=names.length-1,j=1;i>=0;i--,j++){
+						console.log(j+"、"+names[i]);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="请输入姓名：" onclick="saveName()" /> 
+	</body>
+</html>

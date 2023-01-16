@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> 求和 </title>
+		<meta charset="utf-8"/>
+		<script>
+			function sum1(){
+				var i=1;
+				var sum=0;
+				while(i <= 100){					
+					sum = sum + i;					
+					i++;
+				}
+				console.log("1~100,数字求和："+sum);
+			}
+			function sum2(){
+				/*var  i=1;
+				var sum=0;
+				while(i<=10){
+					if(i%2==0){sum = sum + i;}
+					i++;
+				}*/
+				var i=2;
+				var sum=0;
+				while(i <= 100){
+					sum = sum + i;
+					i = i+2;
+				}
+				console.log("1~100,偶数求和："+sum);
+			}
+			function sum3(){
+				var i=1;
+				var sum=0;
+				while(i <= 100){
+					sum = sum + i;
+					i = i+2;
+				}
+				console.log("1~100,奇数求和："+sum);
+			}
+
+		</script>
+	</head>
+	<body> 
+		<input type="button" value="1~100求和：" onclick="sum1()" />
+		<input type="button" value="偶数求和：" onclick="sum2()" />
+		<input type="button" value="奇数求和：" onclick="sum3()" />
+	</body>
+</html>

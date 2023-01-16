@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> 猜数字V1.0 </title>
+		<meta charset="utf-8"/>
+		<script>
+			
+			function guess(){
+				//1.生成一个0~9之间的数字
+				var sum=parseInt(Math.random()*10);
+				console.log("生成的随机数为："+sum);
+
+				while(true){		
+					//2.提示用户输入数据并保存接收
+					var input=prompt("请输入一个数字（exit为退出游戏）：");
+					//3.先判断是否为exit
+					if(input=="exit"){//退出
+						break;
+					}
+					//4.将用户输入的数据转换为 整数
+					var inputNum=parseInt(input);
+					//5.作比较，根据比较的结果打印内容或结束
+					if(inputNum==num){
+						alert("恭喜您，猜对了！");
+						break;
+					}else if(inputNum>num){
+						alert("猜大了，请重新输入！");
+					}else{
+						alert("猜小了，请重新输入！");
+					}
+
+				}
+			}
+			
+
+		</script>
+	</head>
+	<body>
+		<input type="button" value="开始猜数" onclick="guess()" />
+	</body>
+</html>
