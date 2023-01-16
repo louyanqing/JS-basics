@@ -6,9 +6,9 @@
   <script>
 	function calClayto(){
 		var weight = parseFloat(prompt("请输入体重(kg):"));
-		var height = parseFloat(prompt("请输入身高(m):"));
+		var height = parseFloat(prompt("请输入身高(cm):"));
 		//cal Clayto index
-		var clayto = weight / (height * height);
+		var clayto = weight / (height/100 * height);
 		if(clayto < 20){
 			document.write("偏瘦");
 		}else if(clayto > 25){
